@@ -33,6 +33,7 @@ jobs:
     - name: Create a folder
       run: |
         echo "Hello ${{ inputs.name }}"
+        echo "Hello ${{ secrets.PASS }}"
         mkdir ${{ inputs.name }}
         cd ${{ inputs.name }}
         ls -l
