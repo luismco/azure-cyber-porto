@@ -31,7 +31,7 @@ jobs:
     - name: Create a folder
       run: |
         echo "Hello ${{ inputs.name }}"
-        mkdir /${{ inputs.name }}
-        cd /${{ inputs.name }}
+        mkdir ${{ inputs.name }}
+        cd ${{ inputs.name }}
         ls -l
         pwd
